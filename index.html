@@ -3,25 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <title>Fruit Brust</title>
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
   <!--Custom css link -->
     <link rel="stylesheet" href="style.css">
   <!--Daisy UI cdn link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <h2>hello world</h2>
-</body>
-<script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
+  <!--Tailwind cdn link -->
+  <script src="https://cdn.tailwindcss.com"></script>  
+  <!-- Custom Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'title-color': '#121212',
+              'description-color': 'rgba(18, 18, 18, 0.60',
+              'primary-bg-color': '#F85559',
+            }
           }
         }
       }
-    }
-  </script>
+    </script>
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome icon cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---Custom style-->
+    <style>
+      body{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <header class="container mx-auto">
+        <div class="navbar md:my-12 md:px-6 lg:px-8 my-5 ">
+          <div class="navbar md:bg-primary-bg-color rounded-full justify-between items-center md:pl-10 md:pr-6 md:py-3 lg:py-4">
+            
+            <div class="navbar-start hidden lg:flex lg:-ml-5">
+              <ul class="menu menu-horizontal px-1 lg:px-2 text-white xl:text-lg">
+                <li><a class="p-1.5 xl:p-2">Home</a></li>
+                <li><a class="p-1.5 xl:p-2">About Us</a></li>
+                <li><a class="p-1.5 xl:p-2">Shop</a></li>
+                <li><a class="p-1.5 xl:p-2">All Fruits</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-center cursor-pointer">
+              <img src="./img/logo.png" alt="logo" class="w-10 mr-3">
+              <h2 class="text-2xl font-bold md:text-white">Fruit Burst</h2>
+            </div>
+
+            <div class="navbar-end">
+              <!-- Dropdown -->
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="inline-block w-5 h-5 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                  </svg>
+                </label>
+    
+                <ul tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-36 md:w-44 text-end">
+                  <li>
+                    <div class="relative ">
+                      <input type="text" placeholder="Search…"
+                        class="rounded-full relative px-3 py-1 border-2 border-gray-500 w-[140px] md:w-36" />
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 absolute right-5 top-3" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+    
+                    </div>
+                  </li>
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+              <!-- search bar -->
+              <div class="hidden lg:block">
+                <div class="relative">
+                  <input type="text" placeholder="Search…" class="rounded-full relative px-4 py-2" />
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-3 top-3" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+    
+                </div>
+              </div>
+    
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+    </header>
+
+
+
+
+</body>
+
 </html>
